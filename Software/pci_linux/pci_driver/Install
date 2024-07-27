@@ -1,0 +1,15 @@
+sudo /sbin/insmod ./AriesPCI_mod.ko
+sudo chmod -R 666 /dev/AriesPCI0
+/bin/dmesg | tail
+
+echo -----------------------------------------------------------------
+/sbin/lsmod | grep AriesPCI_mod
+echo -----------------------------------------------------------------
+
+ls -l /dev/AriesPCI*
+hexdump -C -n 32 /dev/AriesPCI0
+
+#sudo /sbin/rmmod AriesPCI_mod
+#/bin/dmesg | tail
+#sudo tail /var/log/messages
+

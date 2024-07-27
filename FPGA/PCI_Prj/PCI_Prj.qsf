@@ -1,0 +1,309 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 10.0 Build 218 06/27/2010 SJ Web Edition
+# Date created = 11:39:39  September 23, 2011
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		PCI_Prj_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C5Q208C8
+set_global_assignment -name TOP_LEVEL_ENTITY PRJ_TOP
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 10.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:39:39  SEPTEMBER 23, 2011"
+set_global_assignment -name LAST_QUARTUS_VERSION 11.1
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE PQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 208
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+
+
+############################################################
+# Pin mapping
+
+
+set_location_assignment PIN_132 -to CLK
+set_location_assignment PIN_118 -to RST_L
+
+
+# PCI pin mapping
+set_location_assignment PIN_47 -to ad[31]
+set_location_assignment PIN_48 -to ad[30]
+set_location_assignment PIN_56 -to ad[29]
+set_location_assignment PIN_57 -to ad[28]
+set_location_assignment PIN_58 -to ad[27]
+set_location_assignment PIN_59 -to ad[26]
+set_location_assignment PIN_60 -to ad[25]
+set_location_assignment PIN_61 -to ad[24]
+set_location_assignment PIN_67 -to ad[23]
+set_location_assignment PIN_68 -to ad[22]
+set_location_assignment PIN_69 -to ad[21]
+set_location_assignment PIN_70 -to ad[20]
+set_location_assignment PIN_72 -to ad[19]
+set_location_assignment PIN_74 -to ad[18]
+set_location_assignment PIN_75 -to ad[17]
+set_location_assignment PIN_76 -to ad[16]
+set_location_assignment PIN_92 -to ad[15]
+set_location_assignment PIN_94 -to ad[14]
+set_location_assignment PIN_95 -to ad[13]
+set_location_assignment PIN_96 -to ad[12]
+set_location_assignment PIN_97 -to ad[11]
+set_location_assignment PIN_99 -to ad[10]
+set_location_assignment PIN_101 -to ad[9]
+set_location_assignment PIN_102 -to ad[8]
+set_location_assignment PIN_104 -to ad[7]
+set_location_assignment PIN_105 -to ad[6]
+set_location_assignment PIN_106 -to ad[5]
+set_location_assignment PIN_107 -to ad[4]
+set_location_assignment PIN_108 -to ad[3]
+set_location_assignment PIN_110 -to ad[2]
+set_location_assignment PIN_112 -to ad[1]
+set_location_assignment PIN_113 -to ad[0]
+
+set_location_assignment PIN_64 -to idsel
+set_location_assignment PIN_63 -to cben[3]
+set_location_assignment PIN_77 -to cben[2]
+set_location_assignment PIN_90 -to cben[1]
+set_location_assignment PIN_103 -to cben[0]
+set_location_assignment PIN_28 -to clk_pci
+set_location_assignment PIN_80 -to framen
+set_location_assignment PIN_81 -to irdyn
+set_location_assignment PIN_43 -to intan
+set_location_assignment PIN_88 -to serrn
+set_location_assignment PIN_87 -to perrn
+set_location_assignment PIN_44 -to rstn
+set_location_assignment PIN_84 -to devseln
+set_location_assignment PIN_82 -to trdyn
+set_location_assignment PIN_86 -to stopn
+set_location_assignment PIN_89 -to par
+
+set_location_assignment PIN_46 -to REQN
+set_location_assignment PIN_45 -to GNTN
+
+
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[31]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[30]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[29]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[28]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[27]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[26]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[25]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[24]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[23]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[22]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[21]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[20]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[19]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[18]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[17]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[16]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[15]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[14]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[13]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[12]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[11]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[10]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[9]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[8]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[7]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[6]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[5]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[4]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[3]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[2]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[1]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to ad[0]
+#
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to idsel
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to cben[3]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to cben[2]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to cben[1]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to cben[0]
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to clk_pci
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to framen
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to irdyn
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to intan
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to serrn
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to perrn
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to rstn
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to devseln
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to trdyn
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to stopn
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to par
+#
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to REQN
+#set_instance_assignment -name IO_STANDARD "3.3-V PCI" -to GNTN
+#
+
+
+# SDRAM pin mapping
+set_location_assignment PIN_173 -to SDRAM_DQ[15]
+set_location_assignment PIN_171 -to SDRAM_DQ[14]
+set_location_assignment PIN_170 -to SDRAM_DQ[13]
+set_location_assignment PIN_169 -to SDRAM_DQ[12]
+set_location_assignment PIN_168 -to SDRAM_DQ[11]
+set_location_assignment PIN_165 -to SDRAM_DQ[10]
+set_location_assignment PIN_164 -to SDRAM_DQ[9]
+set_location_assignment PIN_163 -to SDRAM_DQ[8]
+set_location_assignment PIN_187 -to SDRAM_DQ[7]
+set_location_assignment PIN_185 -to SDRAM_DQ[6]
+set_location_assignment PIN_182 -to SDRAM_DQ[5]
+set_location_assignment PIN_181 -to SDRAM_DQ[4]
+set_location_assignment PIN_180 -to SDRAM_DQ[3]
+set_location_assignment PIN_179 -to SDRAM_DQ[2]
+set_location_assignment PIN_176 -to SDRAM_DQ[1]
+set_location_assignment PIN_175 -to SDRAM_DQ[0]
+set_location_assignment PIN_146 -to SDRAM_ADDR[12]
+set_location_assignment PIN_147 -to SDRAM_ADDR[11]
+set_location_assignment PIN_193 -to SDRAM_ADDR[10]
+set_location_assignment PIN_149 -to SDRAM_ADDR[9]
+set_location_assignment PIN_150 -to SDRAM_ADDR[8]
+set_location_assignment PIN_151 -to SDRAM_ADDR[7]
+set_location_assignment PIN_152 -to SDRAM_ADDR[6]
+set_location_assignment PIN_160 -to SDRAM_ADDR[5]
+set_location_assignment PIN_161 -to SDRAM_ADDR[4]
+set_location_assignment PIN_188 -to SDRAM_ADDR[3]
+set_location_assignment PIN_189 -to SDRAM_ADDR[2]
+set_location_assignment PIN_191 -to SDRAM_ADDR[1]
+set_location_assignment PIN_192 -to SDRAM_ADDR[0]
+set_location_assignment PIN_203 -to SDRAM_LDQM
+set_location_assignment PIN_162 -to SDRAM_UDQM
+set_location_assignment PIN_201 -to SDRAM_WE_N
+set_location_assignment PIN_200 -to SDRAM_CAS_N
+set_location_assignment PIN_199 -to SDRAM_RAS_N
+set_location_assignment PIN_198 -to SDRAM_CS_N
+set_location_assignment PIN_197 -to SDRAM_BA_0
+set_location_assignment PIN_195 -to SDRAM_BA_1
+set_location_assignment PIN_144 -to SDRAM_CLK
+set_location_assignment PIN_145 -to SDRAM_CKE
+
+
+# Digital io mapping
+set_location_assignment PIN_31 -to DIGITAL_IO[15]
+set_location_assignment PIN_30 -to DIGITAL_IO[14]
+set_location_assignment PIN_15 -to DIGITAL_IO[13]
+set_location_assignment PIN_14 -to DIGITAL_IO[12]
+set_location_assignment PIN_13 -to DIGITAL_IO[11]
+set_location_assignment PIN_12 -to DIGITAL_IO[10]
+set_location_assignment PIN_11 -to DIGITAL_IO[9]
+set_location_assignment PIN_10 -to DIGITAL_IO[8]
+set_location_assignment PIN_8 -to DIGITAL_IO[7]
+set_location_assignment PIN_6 -to DIGITAL_IO[6]
+set_location_assignment PIN_5 -to DIGITAL_IO[5]
+set_location_assignment PIN_4 -to DIGITAL_IO[4]
+set_location_assignment PIN_3 -to DIGITAL_IO[3]
+set_location_assignment PIN_208 -to DIGITAL_IO[2]
+set_location_assignment PIN_207 -to DIGITAL_IO[1]
+set_location_assignment PIN_206 -to DIGITAL_IO[0]
+
+
+# Analog out
+set_location_assignment PIN_34 -to DAC_DATA
+set_location_assignment PIN_33 -to DAC_LDAC
+set_location_assignment PIN_35 -to DAC_CLK
+set_location_assignment PIN_32 -to DAC_CS1
+set_location_assignment PIN_36 -to DAC_CS2
+
+# Analog in
+set_location_assignment PIN_37 -to ADC_CLK
+set_location_assignment PIN_39 -to ADC_DOUT
+set_location_assignment PIN_40 -to ADC_DIN
+set_location_assignment PIN_41 -to ADC_CS
+
+# UART
+set_location_assignment PIN_120 -to UART_TXD
+set_location_assignment PIN_119 -to UART_RXD
+
+# VGA
+set_location_assignment PIN_134 -to VGA_VSYNC
+set_location_assignment PIN_135 -to VGA_HSYNC
+set_location_assignment PIN_142 -to VGA_R[1]
+set_location_assignment PIN_143 -to VGA_R[0]
+set_location_assignment PIN_139 -to VGA_G[1]
+set_location_assignment PIN_141 -to VGA_G[0]
+set_location_assignment PIN_137 -to VGA_B[1]
+set_location_assignment PIN_138 -to VGA_B[0]
+
+# Serial flash
+set_location_assignment PIN_116 -to FLASH_DCLK
+set_location_assignment PIN_117 -to FLASH_ASDI
+set_location_assignment PIN_115 -to FLASH_DATA
+set_location_assignment PIN_114 -to FLASH_nCS
+
+
+# Switch
+set_location_assignment PIN_133 -to SW_TACT[2]
+set_location_assignment PIN_128 -to SW_TACT[1]
+set_location_assignment PIN_127 -to SW_TACT[0]
+set_location_assignment PIN_205 -to SW_SLIDE[3]
+set_location_assignment PIN_27 -to SW_SLIDE[2]
+set_location_assignment PIN_24 -to SW_SLIDE[1]
+set_location_assignment PIN_23 -to SW_SLIDE[0]
+
+
+
+
+############################################################
+
+
+
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name MISC_FILE "D:/Hong_project/PCI_board_prj/FPGA/PCI_Prj/PCI_Prj.dpf"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name MISC_FILE "F:/Hong_Prj/PCI_Prj/FPGA/PCI_Prj/PCI_Prj.dpf"
+set_global_assignment -name VHDL_FILE TIMER.vhd
+set_global_assignment -name VHDL_FILE SPI_IF.vhd
+set_global_assignment -name VHDL_FILE PIO_CTRL.vhd
+set_global_assignment -name VHDL_FILE MY_PKG.vhd
+set_global_assignment -name VHDL_FILE DAC_STM.vhd
+set_global_assignment -name VHDL_FILE DAC_IF.vhd
+set_global_assignment -name VHDL_FILE DAC_CTRL.vhd
+set_global_assignment -name VHDL_FILE ADC_STM.vhd
+set_global_assignment -name VHDL_FILE ADC_IF.vhd
+set_global_assignment -name VHDL_FILE ADC_CTRL.vhd
+set_global_assignment -name VHDL_FILE MYIP.vhd
+set_global_assignment -name VHDL_FILE PCI_TGT8.VHD
+set_global_assignment -name VHDL_FILE PRJ_TOP.vhd
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name STRATIX_CONFIGURATION_DEVICE EPCS1
+set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

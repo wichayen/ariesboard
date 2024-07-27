@@ -1,0 +1,8 @@
+
+sudo /sbin/rmmod AriesPCI_mod
+/bin/dmesg | tail
+sudo tail /var/log/messages
+
+sudo rm -f /dev/AriesPCI*
+
+
